@@ -1,0 +1,5 @@
+
+# nmap -iR 10000 -Pn -n -p80 --host-timeout 5s --min-hostgroup 4096 --min-parallelism 4096 -v -oX results.xml -v
+
+# gvim results.xml
+

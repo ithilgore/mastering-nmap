@@ -1,0 +1,14 @@
+
+# cat hosts.txt 
+
+# nmap -iL hosts.txt -F --reason -v -n -Pn 
+
+# nmap -iL hosts.txt -F -v --reason -v -n -Pn --max-retries 0
+
+# nmap -iL hosts.txt -F --reason -v -n -Pn -T5
+
+# nmap -iL hosts.txt -F --reason -v -n -Pn -T1 --packet-trace
+
+# nmap -iL hosts.txt -F --reason -v -n -Pn --max-rtt-timeout 20ms
+
+

@@ -1,0 +1,10 @@
+
+# nmap -iR 1000 -n -sP --min-rate 1000 --max-retries 0 --max-rtt-timeout 100ms --max-scan-delay 0 -T5 
+
+# nmap 192.168.59.132 
+
+# nmap 192.168.59.132 --defeat-rst-ratelimit
+
+# nmap 192.168.59.132 -sU -T4 --defeat-icmp-ratelimit  
+
+# nmap 192.168.59.132 -sU -T4
