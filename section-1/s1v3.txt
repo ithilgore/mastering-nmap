@@ -1,0 +1,8 @@
+
+# nmap -sV -F scanme.nmap.org 
+
+# nmap -sV scanme.nmap.org --version-trace -p22
+
+# less /usr/local/share/nmap/nmap-service-probes
+
+

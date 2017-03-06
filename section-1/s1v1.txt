@@ -1,0 +1,12 @@
+
+# nmap scanme.nmap.org
+
+# nmap -h 
+
+# nmap sock-raw.org --packet-trace
+
+# nmap sock-raw.org -Pn --packet-trace
+
+# nmap 192.168.59.132 -p- -T5 -Pn --packet-trace -v
+
+

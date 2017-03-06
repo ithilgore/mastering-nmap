@@ -1,0 +1,6 @@
+
+# nmap -sn 192.168.59.0/24 --packet-trace -n
+
+# nmap -sn scanme.nmap.org insecure.org sock-raw.org --packet-trace -n --reason -v
+
+

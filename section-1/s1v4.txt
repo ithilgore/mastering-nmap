@@ -1,0 +1,2 @@
+
+# nmap scanme.nmap.org -O -F -v
