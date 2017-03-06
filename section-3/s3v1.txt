@@ -1,0 +1,19 @@
+
+# nmap 192.168.59.2-255 -p80,443 -T5 -n -Pn --open -sV
+
+# nmap -p80,443 --script http-methods 192.168.59.135-136 -Pn -n
+
+# nmap -p80,443 192.168.59.135-136 -Pn -n --script http-methods --script-args  http-methods.test-all,http-methods.retest
+
+# nmap -p80,8080 --script http-open-proxy 192.168.59.135-136 -Pn -n -sV
+
+# nmap --script-args http.useragent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" --script http-open-proxy -p80,8080 -iR 1000 -n -Pn -T4 --open
+
+# nmap -p80 --script http-userdir-enum 192.168.59.135-136
+
+# http://192.168.59.135/~test
+
+# cat /usr/local/share/nmap/nselib/data/usernames.lst
+
+# https://nmap.org/nsedoc/scripts/http-userdir-enum.html
+

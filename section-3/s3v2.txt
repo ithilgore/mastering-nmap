@@ -1,0 +1,14 @@
+
+# nmap --script http-enum -p80 192.168.59.135-136 -Pn -n --script-args http-enum.displayall
+
+# less /usr/local/share/nmap/nselib/data/http-fingerprints.lua
+
+# nmap --script http-backup-finder -p80 192.168.59.135 -Pn -n  --script-args http-backup-finder.maxpagecount=200,http-backup-finder.url=/test
+
+# wget http://192.168.59.135/test/login.bak
+
+# nmap 192.168.59.135 -p80 --script http-waf-detect --script-args="http-waf-detect.detectBodyChanges","http-waf-detect.aggro=2,http-waf-detect.uri=/login.php"
+
+# nmap 192.168.59.135 -p80 --script http-waf-detect --script-args="http-waf-detect.detectBodyChanges","http-waf-detect.aggro=2,http-waf-detect.uri=/login.php" --script-trace 2> /dev/null | grep GET
+
+
