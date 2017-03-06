@@ -1,0 +1,10 @@
+
+# nmap  192.168.1.8 -p U:137,T:445,139 --script broadcast-dhcp-discover,smb-os-discovery -A -v10
+
+# nmap 192.168.1.8 -p U:137,T:139,445 -A -v10 --script-trace -d
+
+# https://nmap.org/book/nse-usage.html
+
+# grep \"default\" script.db 
+
+# https://nmap.org/book/nse-usage.html#nse-script-types

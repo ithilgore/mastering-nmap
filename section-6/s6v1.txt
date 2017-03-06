@@ -1,0 +1,9 @@
+
+$ cd  /usr/local/share/nmap/nselib 
+$ ls 
+
+$ gvim smb.lua
+
+# nmap 192.168.1.8 -p 445 --script smbv2-enabled -Pn -n
+
+# https://nmap.org/book/nse-script-format.html

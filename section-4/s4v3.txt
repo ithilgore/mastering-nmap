@@ -1,0 +1,15 @@
+
+# https://nmap.org/nsedoc/
+
+# nmap -p 443 -Pn -n -T4 192.168.59.135 -vv --script ssl*
+
+# https://weakdh.org/
+
+# https://www.imperialviolet.org/2014/10/14/poodle.html
+
+# https://drownattack.com/
+
+# https://github.com/sensepost/heartbleed-poc/blob/master/heartbleed-poc.py
+# gvim heartbleed-poc.py
+
+# python heartbleed-poc.py 192.168.59.135

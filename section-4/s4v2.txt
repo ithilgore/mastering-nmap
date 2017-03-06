@@ -1,0 +1,17 @@
+
+# https://nmap.org/nsedoc/index.html
+
+# nmap --script smtp-open-relay -Pn -n -p25,465,587 -iR 750 -T4 --open
+
+# nmap --script smtp-enum-users -Pn -n -p25,465,587 192.168.59.135 -T4 --open --script-args smtp-enum-users.methods={VRFY}
+
+# nmap --script smtp-brute -Pn -n -p25 192.168.59.135 --script-args passdb=./passwords.lst -d   
+
+# wc -l /usr/local/share/nmap/nselib/data/passwords.lst
+
+# ncat 192.168.59.135 25 -v
+
+# perl -MMIME::Base64 -e 'print encode_base64("test");' 
+
+# perl -MMIME::Base64 -e 'print encode_base64("test123");'
+

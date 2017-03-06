@@ -1,0 +1,12 @@
+
+$ ncrack smb://192.168.1.8 --user Administrator -P ./passwords.lst -d9
+
+$ nse(){ find /usr/local/share/nmap/scripts/ -iname "*$1*" -printf '%P\n';}
+
+# nmap --script smb-enum-shares -p 445 192.168.1.8 -Pn -n -oN smb1.txt
+
+# nmap --script smb-enum-shares.nse -p 445 192.168.1.8 -Pn -n --script-args smbusername=Administrator,smbpassword=test123
+
+# nmap  --script smb-enum-users  -p 445 192.168.1.8 --script-args smbusername=Administrator,smbpassword=test123,samronly=1
+
+
