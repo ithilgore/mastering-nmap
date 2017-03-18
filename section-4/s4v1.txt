@@ -13,8 +13,6 @@
 
 # less /usr/local/share/nmap/nselib/data/mysql-cis.audit
 
-# nmap --script mysql-empty-password -Pn -n -p3306 -iR 1000 -T4 --open
-
 # nmap --script mysql-brute -Pn -n -p3306 192.168.59.135 -d
 
 # nmap --script mysql-brute -Pn -n -p3306 192.168.59.135 -d --script-args brute.threads=2
